@@ -9,6 +9,6 @@ public class LoginController {
 	@GetMapping("/login")
 	public String letsLogin()
 	{
-		return "Welcome to the login page";
+		return "Welcome to the login page for the customer";
 	}
 }
