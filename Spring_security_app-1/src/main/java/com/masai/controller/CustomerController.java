@@ -28,7 +28,7 @@ public class CustomerController {
 	@GetMapping("/hello")
 	public String welcome()
 	{
-		return "Welcome to spring security";
+		return "Welcome to spring security app-1";
 	}
 	
 	@PostMapping("/customers")
