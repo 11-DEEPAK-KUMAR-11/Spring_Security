@@ -14,13 +14,13 @@ This framework targets two major areas of application - authentication and autho
 
 Authentication is how we verify the identity of who is trying to access a particular resource. A common way to authenticate users is by requiring the user to enter a username and password. Once authentication is performed we know the identity and can perform authorization. Http response code in case of failed authentication is 401.
 
-![401.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4a41d95f-8cfa-4da6-932b-6c285736f60b/401.jpg)
+
 
 **Authorization**
 
 Authorization is the process to allow the authority to perform actions in the application. We can apply authorization to authorize web requests, methods, and access to the individual domain. Http response code in case of failed authorization is 403. 
 
-![403.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/87bd7d26-e623-43a8-bd6b-b10e8ddda3ce/403.jpg)
+
 
 ### Spring Security Dependency for Maven
 
@@ -65,13 +65,13 @@ Once the request has been authenticated, the Authentication will usually be stor
 
 # Spring Security Flow
 
-1) User trying to access a secure page for the first time
+1)User trying to access a secure page for the first time
 
 2)Behind the scenes few filters like AbstractSecurityInterceptor, DefaultLoginPageGeneratingFilter
 
-identify that the user is not logged in & redirect the user to the login page
+  identify that the user is not logged in & redirect the user to the login page
 
-3) User entered his credentials and the request is intercepted by filters
+3)User entered his credentials and the request is intercepted by filters
 
 4)Filters like UsernamePasswordAuthenticationFilter, extract the username, and password from the request and form an object of UsernamePasswordAuthenticationToken which is an implementation of the Authentication interface. With the object created it invokes authenticate() method of ProviderManager.
 
@@ -91,7 +91,7 @@ other available AuthenticationProviders Otherwise, it simply returns the authent
 
 for future use and the response will be returned to the end user.
 
-![Spring Flow.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/37161119-d4a2-41a8-8df9-50feda756c1f/Spring_Flow.png)
+
 
 # Different Ways of Password Management
 
