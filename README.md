@@ -33,7 +33,7 @@ Authorization is the process to allow the authority to perform actions in the a
 
 # Spring Security Components
 
-![Screenshot_20221128_112201.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2e2cd936-ef33-4c03-8359-a22ee0cb3730/Screenshot_20221128_112201.png)
+
 
 ### Spring Security Filters
 
@@ -95,7 +95,7 @@ for future use and the response will be returned to the end user.
 
 # Different Ways of Password Management
 
-![Screenshot_20221130_234746.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f1cd7853-717e-4f8f-87b9-f6d82abc5b54/Screenshot_20221130_234746.png)
+
 
 ### Encoding
 
