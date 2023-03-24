@@ -75,19 +75,19 @@ Once the request has been authenticated, the Authentication will usually be stor
 
 4)Filters like UsernamePasswordAuthenticationFilter, extract the username, and password from the request and form an object of UsernamePasswordAuthenticationToken which is an implementation of the Authentication interface. With the object created it invokes authenticate() method of ProviderManager.
 
-5) ProviderManager which is an implementation of AnthenticationManager, identifies the list of Authentication providers available that are supporting a given authentication object style. In the default behavior, authenticate( ) method of the DaoAuthenticationProvider will be invoked by ProviderManager.
+5)ProviderManager which is an implementation of AnthenticationManager, identifies the list of Authentication providers available that are supporting a given authentication object style. In the default behavior, authenticate( ) method of the DaoAuthenticationProvider will be invoked by ProviderManager.
 
-6) DaoAuthenticationProvider invokes the method loadUserByUsername() of UserDetailsService to load the user details. Once the user details are loaded, it takes help from the default password encoder implementation to compare the password and validate if the user is authentic or not.
+6)DaoAuthenticationProvider invokes the method loadUserByUsername() of UserDetailsService to load the user details. Once the user details are loaded, it takes help from the default password encoder implementation to compare the password and validate if the user is authentic or not.
 
-7) At last it returns the Authentication object with the details of the authentication
+7)At last it returns the Authentication object with the details of the authentication
 
 success or not to ProviderManager.
 
-8) ProviderManager checks if authentication is successful or not. If not, it will try with
+8)ProviderManager checks if authentication is successful or not. If not, it will try with
 
 other available AuthenticationProviders Otherwise, it simply returns the authentication details to the filters.
 
-9) The Authentication object is stored in the SecurityContext object by the filter
+9)The Authentication object is stored in the SecurityContext object by the filter
 
 for future use and the response will be returned to the end user.
 
