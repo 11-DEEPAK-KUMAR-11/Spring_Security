@@ -22,7 +22,7 @@ Authorization is the process to allow the authority to perform actions in the a
 
 
 
-### Spring Security Dependency for Maven
+## Spring Security Dependency for Maven
 
 ```java
 <dependency>
