@@ -33,6 +33,8 @@ Authorization is the process to allow the authority to perform actions in the a
 
 # Spring Security Components
 
+![Screenshot (1980)](https://user-images.githubusercontent.com/101390725/231461429-2fceb881-da8d-4ef7-b29f-b21d24aa88c4.png)
+
 
 
 ### Spring Security Filters
